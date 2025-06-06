@@ -22,7 +22,7 @@ function validarFecha(){
 
 function menu(){
     opcionMenu = prompt(
-        `                    +++    GESTIÓN DE USUARIOS    +++
+        `                    GESTIÓN DE USUARIOS
         \nSeleccione la opcion que desee ejecutar. 
         \nPresione Cancelar si desea cerrar el programa.
         \n1 - Registro de usuario nuevo.
