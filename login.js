@@ -27,9 +27,10 @@ function menu(){
         \nPresione Cancelar si desea cerrar el programa.
         \n1 - Registro de usuario nuevo.
         \n2 - Listar usuarios existentes.
-        \n3 - Iniciar sesion en usuario existente.
-        \n4 - Modificar usuario.
-        \n5 - Eliminar usuario.`);
+        \n3 - Iniciar sesion en usuario existente.        `);
+        // \n4 - Modificar usuario.
+        // \n5 - Eliminar usuario.
+
     return opcionMenu;
 }
 
@@ -107,16 +108,6 @@ function iniciarSesion(){
     } while (nickExiste === false);
 }
 
-
-
-
-
-
-
-
-
-
-
 while (!fechaDeHoy || fechaDeHoy == "0") {
     fechaDeHoy = prompt("Ingrese la fecha de hoy con el formato \"04/12/95\". Presione Cancelar si desea cerrar el programa.");
     validarFecha()
@@ -126,7 +117,7 @@ alert(`La fecha del dia de hoy es ${fechaDeHoy}.`);
 
 opcionMenu = menu();
 
-while (opcionMenu > 0 && opcionMenu <= 5 && !isNaN(opcionMenu)) {
+while (opcionMenu > 0 && opcionMenu <= 3 && !isNaN(opcionMenu)) {
     switch (parseInt(opcionMenu)) {
         case 1:
             alert(`La opción seleccionada fue: Registro de usuario nuevo.`);
